@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnActivity3 = findViewById(R.id.btnActivity3);
         btnActivity3.setOnClickListener(btnhandler);
+
+        //create a book--hard code the book
+        Account acctData= new Account("Checking",100.00,12345);
+
+        TextView displayData = findViewById(R.id.editTextOutPut);
+
+
+
+        displayData.setText(new StringBuilder().append("Bank Name:").append(acctData.getBankName()).append("\n").append("Account Balance: ").append(acctData.getBalance()).append("\n").append("Account Number: ").append(acctData.getAccountNumber()).toString());
 
     }
     //define OnClickEvent

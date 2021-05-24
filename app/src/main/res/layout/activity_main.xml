@@ -8,16 +8,28 @@
 
 
     <ImageView
-        android:id="@+id/imgActivity1"
-        android:layout_width="match_parent"
-        android:layout_height="298dp"
-        android:layout_marginBottom="192dp"
+        android:id="@+id/img1Activity1"
+        android:layout_width="393dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="8dp"
         android:contentDescription="@string/image"
+        android:src="@drawable/dice_6"
+        app:layout_constraintBottom_toTopOf="@id/img2Activity1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img2Activity1"
+        android:layout_width="388dp"
+        android:layout_height="198dp"
+        android:layout_marginBottom="96dp"
+        android:contentDescription="@string/image"
+        android:src="@drawable/bankaccount"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnActivity2"
@@ -33,8 +45,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnActivity3"
-        app:layout_constraintTop_toBottomOf="@id/imgActivity1"
-        app:layout_constraintVertical_bias="0.237" />
+        app:layout_constraintTop_toBottomOf="@id/img2Activity1"
+        app:layout_constraintVertical_bias="0.769" />
 
     <Button
         android:id="@+id/btnActivity3"
@@ -50,39 +62,38 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnActivity2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgActivity1"
-        app:layout_constraintVertical_bias="0.243" />
+        app:layout_constraintTop_toBottomOf="@+id/img2Activity1"
+        app:layout_constraintVertical_bias="0.903" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="290dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="24dp"
+    <TextView
+        android:id="@+id/editTextOutPut"
+        android:layout_width="397dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="44dp"
         android:ems="10"
-        android:gravity="center_horizontal"
-        android:inputType="textPersonName"
-        android:text="@string/place_holder"
 
-        app:layout_constraintBottom_toTopOf="@+id/imgActivity1"
+        android:gravity="center_horizontal"
+        android:hint="@string/detail_display"
+        app:layout_constraintBottom_toTopOf="@+id/img1Activity1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtViewTitle"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
         android:text="@string/title_of_the_app"
         android:textAlignment="center"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOutPut"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.566"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="0.355" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Dice Roller Game And Banking App</string>
     <string name="image">image</string>
-    <string name="title_of_the_app">Title of the App</string>
+    <string name="title_of_the_app">Dice Game and Banking App</string>
     <string name="activity2">Activity2</string>
     <string name="activity1">Activity1</string>
-    <string name="place_holder">place holder</string>
+    <string name="place_holder">details</string>
     <string name="activity3">Activity3</string>
     <string name="player1">Player 1</string>
     <string name="player2">Player 2</string>
@@ -16,10 +16,14 @@
     <string name="txtGamePoint1">0</string>
     <string name="txtGamePoint2">0</string>
     <string name="game_winner_message">The winner is player </string>
-    <string name="btnStartGame">Start</string>
+    <string name="btnStartGame">Start Playing</string>
     <string name="btnStopGame">Stop</string>
 
     <string name="dice_image1">Dice Image</string>
     <string name="dice_image2">Dice Image</string>
     <string name="dice_image3">Dice Image</string>
+    <string name="submit">Submit</string>
+    <string name="displaytoactivity">DisplayToActivity</string>
+    <string name="submittomain">SubmitToMain</string>
+    <string name="detail_display">detail display</string>
 </resources>
